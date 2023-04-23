@@ -18,33 +18,47 @@
 
 //  Task2. Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
 //  Проверка чисел на равенство здесь не обязательна.
-Console.WriteLine("Enter the first number");
-int a = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Enter the second number");
-int b = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Enter the third number");
-int c = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Enter the first number");
+// int a = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Enter the second number");
+// int b = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Enter the third number");
+// int c = Convert.ToInt32(Console.ReadLine());
 
-if (a < b)
+// if (a < b)
+// {
+//     if (b < c)
+//     {
+//         Console.WriteLine($"{c} is the largest number");
+//     }
+//     else
+//     {
+//         Console.WriteLine($"{b} is the largest number");
+//     }
+// }
+// else
+// {
+//     if (a < c)
+//     {
+//         Console.WriteLine($"{c} is the largest number");
+//     }
+//     else
+//     {
+//         Console.WriteLine($"{a} is the largest number");
+//     }
+// }
+
+//  Task3. Напишите программу, которая на вход принимает число и выдает, является ли число четным.
+
+Console.WriteLine("please put you number here");
+int num = Convert.ToInt32(Console.ReadLine());
+int remDiv = num % 2;
+if(remDiv == 0)
 {
-    if (b < c)
-    {
-        Console.WriteLine($"{c} is the largest number");
-    }
-    else
-    {
-        Console.WriteLine($"{b} is the largest number");
-    }
+    Console.WriteLine($"Your number is even"); //четный
 }
 else
 {
-    if (a < c)
-    {
-        Console.WriteLine($"{c} is the largest number");
-    }
-    else
-    {
-        Console.WriteLine($"{a} is the largest number");
-    }
+    Console.WriteLine($"Your number is odd"); //нечетный
 }
 
