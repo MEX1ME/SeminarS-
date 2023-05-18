@@ -80,3 +80,4 @@
 // int a = Convert.ToInt32(Console.ReadLine());
 // Console.WriteLine($"list of cubes of numbers from 1 to {a}");
 // CubesNumbers(a);
+
