@@ -58,15 +58,14 @@ void PrintArray(int[] array)
     Console.WriteLine();
 }
 
-int[] WishRotate(int[] wishRotate, int size)
+int[] WishRotate(int[] wishRotate)
 {
-    //int[] wishRotate = new int[size];
     int box = 0;
-    for (int i = 0; i < size - 1 - i; i++)
+    for (int i = 0; i < wishRotate.Length - 1 - i; i++)
     {
         box = wishRotate[i];
-        wishRotate[i] = wishRotate[size - 1 - i];
-        wishRotate[size - 1 - i] = box;
+        wishRotate[i] = wishRotate[wishRotate.Length - 1 - i];
+        wishRotate[wishRotate.Length - 1 - i] = box;
     }
     return wishRotate;
 }
@@ -90,5 +89,5 @@ int maxValue = Convert.ToInt32(Console.ReadLine());
 int[] array = CreateRandomArray(size, minValue, maxValue);
 
 PrintArray(array);
-array = WishRotate(array, size);
+array = WishRotate(array);
 PrintArray(array);
